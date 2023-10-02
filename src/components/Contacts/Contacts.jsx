@@ -3,7 +3,7 @@ import { deleteContact, getContacts } from 'redux/contactsSlice';
 import { getFilter } from 'redux/filterSlice';
 import css from './contacts.module.css';
 
-export const Contacts = () => {
+export const contacts = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
   const filtered = useSelector(getFilter);
